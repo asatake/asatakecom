@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap-material.min.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='css/ripples.min.css') }}>
+
+    <script type="text/javascript" src={{ url_for('static', filename='js/jquery-2.2.3.min.js') }}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js/bootstrap.min.js') }}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js/material.min.js') }}></script>
+    <script type="text/javascript" src={{ url_for('static', filename='js/ripples.min.js') }}></script>
+
+
+    {% if title %}
+    <title>asatake.com</title>
+    {% else %}
+    <title>TEST</title>
+    {% endif %}
+</head>
+<body>
+{% block content %}
+{% endblock %}
+
+<footer>asatake.com...</footer>
+</body>
+</html>

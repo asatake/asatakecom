@@ -1,6 +1,11 @@
 {% extends "layout.html" %}
 
 {% block content %}
-    <h1>これはテスト</h1>
-    <button class="btn btn-info btn-raised btn-sm">Button</button>
-{% endblock %}
+    <h1>asatake.comへようこそ</h1>
+
+    <p>初めての方はこちら -> <a href={{ url_for('about') }}>
+        <button class="btn btn-primary btn-raised btn-sm">About</button></a></p>
+    <br>
+    <h3>現在サイト構築中です</h3>
+
+{% endblock %}}

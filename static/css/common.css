@@ -1,0 +1,82 @@
+
+@import "../css/bootstrap.min.css"; 
+  header {
+    background: #73cb73; }
+    header h1 {
+      margin: 0;
+      padding-top: 2%;
+      padding-bottom: 2%;
+      font-size: 3em;
+      text-align: center;
+      text-shadow: 2px 2px #50b0a0, 3px 3px #494949; }
+      header ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 2%;
+        list-style: none; }
+        header li a {
+          padding: 2px 12px;
+          border-bottom: 3px solid;
+          color: #122b40; }
+          header li a:hover, header li a:active {
+            color: #1d4466;
+            border-bottom: 3px solid #1d4466; }
+
+  content div {
+    width: 100%;
+    padding: 0 4% 4%; }
+
+  footer {
+    margin: 2% auto;
+    width: 80%; }
+    footer p {
+      text-align: center; }
+
+  @media (max-width: 625px) {
+    header a:nth-child(even) {
+      display: none;   }
+}
+
+  @media (max-width: 625px) {
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      margin: 0;   }
+      header h1 {
+        position: absolute;
+        bottom: 2%;
+        height: 40px;
+        padding: 0 10%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        text-shadow: 2px 2px #50b0a0, 3px 3px #494949;   }
+        header ul {
+          position: absolute;
+          bottom: 8%;
+          height: 40px;
+          padding: 0 10%;
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          list-style: none;   }
+          header li {
+            font-size: 1em;
+            height: 40px;
+            overflow: hidden;   }
+            header li a {
+              display: block;
+              height: 40px;
+              padding: 12px;
+              padding-top: 8px;
+              margin: 0;   }
+              header li a:nth-child(even) {
+                position: relative;
+                top: -4px;
+                right: 0;   }
+}

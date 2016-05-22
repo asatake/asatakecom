@@ -1,0 +1,73 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <h1>活動内容</h1>
+    <ul class="nav nav-tabs" style="margin-bottom: 15px;">
+        <li><a href="#discography" data-toggle="tab">やったもの</a></li>
+        <li><a href="#request" data-toggle="tab">ご依頼について</a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+        <div class="tab-pane fade active in" id="discography">
+            <ul class="nav nav-pills" style="margin-bottom: 15px;">
+                <li class="active"><a href="#2015" data-toggle="tab">2015</a></li>
+                <li><a href="#2012" data-toggle="tab">2012</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade active in" id="2015">
+                    <p>準備中</p>
+                </div>
+                <div class="tab-pane fade in" id="2012">
+                    <p>準備中</p>
+                </div>
+            </div>
+        </div>
+        <div class="tab-pane fade in" id="request">
+            <h3><span class="glyphicon glyphicon-briefcase"></span> ご依頼について</h3>
+            <br>
+
+            <p>asatake.comでは楽曲制作のご依頼を承っております。</p>
+
+            <p>ゲームや映像、演劇などのBGMにおきまして何かお役に立てる機会を頂けましたら幸いです。</p>
+            <br>
+
+            <p>制作料金は以下のとおりに設定しております。</p>
+
+            <p>なお、細かい料金設定はご相談の上決定させていただきます。</p>
+
+            <p>なるべく早めのご依頼をお願い致します。</p>
+
+            <p>ご依頼は、メールまたはTwitterのDMにてお願い致します。</p>
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th>種別</th>
+                    <th>説明</th>
+                    <th>料金(単価)</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>15秒以内の楽曲</td>
+                    <td>ジングル・アイキャッチなど</td>
+                    <td>〜500円</td>
+                </tr>
+                <tr>
+                    <td>BGM</td>
+                    <td>2分程度でループする楽曲</td>
+                    <td>〜2,000円</td>
+                </tr>
+                <tr>
+                    <td>歌曲</td>
+                    <td>現在受け付けておりません。</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>作品への参加</td>
+                    <td>1つの作品に多数の楽曲を提供させていただく場合</td>
+                    <td>〜20,000円</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

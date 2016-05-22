@@ -4,25 +4,38 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap.min.css') }}>
-    <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap-material.min.css') }}>
-    <link rel="stylesheet" href={{ url_for('static', filename='css/ripples.min.css') }}>
+    <link rel="stylesheet" href={{ url_for('static', filename='css/bootstrap-theme.min.css') }}>
+    {% assets "scss_all" %}
+        <link rel="stylesheet" type="text/css" href="{{ ASSET_URL }}">
+    {% endassets %}
 
     <script type="text/javascript" src={{ url_for('static', filename='js/jquery-2.2.3.min.js') }}></script>
     <script type="text/javascript" src={{ url_for('static', filename='js/bootstrap.min.js') }}></script>
-    <script type="text/javascript" src={{ url_for('static', filename='js/material.min.js') }}></script>
-    <script type="text/javascript" src={{ url_for('static', filename='js/ripples.min.js') }}></script>
-
 
     {% if title %}
-    <title>asatake.com</title>
+        <title>{{ title }}/asatake.com</title>
     {% else %}
-    <title>TEST</title>
+        <title>TEST</title>
     {% endif %}
 </head>
 <body>
-{% block content %}
-{% endblock %}
+{% include "header.html" %}
 
-<footer>asatake.com...</footer>
+<content>
+    <div id="page-content-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+</content>
+
+<footer>
+    <p>&copy; 2016 asatake</p>
+</footer>
 </body>
 </html>

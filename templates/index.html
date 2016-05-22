@@ -2,10 +2,17 @@
 
 {% block content %}
     <h1>asatake.comへようこそ</h1>
-
+    <br>
     <p>初めての方はこちら -> <a href={{ url_for('about') }}>
         <button class="btn btn-primary btn-raised btn-sm">About</button></a></p>
     <br>
-    <h3>現在サイト構築中です</h3>
+    <div class="panel-info">
+        <div class="panel-heading">What's New</div>
+        <ul class="list-group">
+            <li class="list-group-item">
+                2016/5/22, サイトリニューアル
+            </li>
+        </ul>
+    </div>
 
 {% endblock %}}

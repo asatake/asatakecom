@@ -22,11 +22,11 @@
 <body>
 {% include "header.html" %}
 
-<content>
+<contents>
     <div id="page-content-wrapper">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-12">
                     <span id="wrap"></span>
                     {% block content %}
                     {% endblock %}
@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-</content>
+</contents>
 
 <p id="page-top"><a href="#wrap">一番上に戻る</a></p>
 

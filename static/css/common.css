@@ -23,9 +23,9 @@
             color: #1d4466;
             border-bottom: 3px solid #1d4466; }
 
-  content div {
+  div#content div {
     width: 100%;
-    padding: 0 4% 4%; }
+    padding: 1% 2% 1%; }
 
   footer {
     margin: 2% auto;
@@ -51,12 +51,12 @@
         text-decoration: none;
         background: #a8a8a8; }
 
-  @media (max-width: 625px) {
+  @media (max-width: 645px) {
     header a:nth-child(even) {
       display: none;   }
 }
 
-  @media (max-width: 625px) {
+  @media (max-width: 645px) {
     header {
       position: absolute;
       top: 0;
